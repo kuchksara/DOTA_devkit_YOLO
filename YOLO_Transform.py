@@ -298,7 +298,7 @@ def delete(imgpath, txtpath):
 
 if __name__ == '__main__':
     ## an example
-    base_dota = '/Users/apple/khedmat/dota'
+    base_dota = '/content/drive/My Drive/dota'
     base_path_image = base_dota + '/images'
     base_path_labels = base_dota + '/train'
     dota2LongSideFormat(base_path_image,
