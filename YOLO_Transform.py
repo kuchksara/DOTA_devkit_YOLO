@@ -298,13 +298,15 @@ def delete(imgpath, txtpath):
 
 if __name__ == '__main__':
     ## an example
-
-    dota2LongSideFormat('./DOTA_demo/images',
-                        './DOTA_demo/labelTxt',
-                        './DOTA_demo/yolo_labels',
+    base_dota = '/Users/apple/khedmat/dota'
+    base_path_image = base_dota + '/images'
+    base_path_labels = base_dota + '/train'
+    dota2LongSideFormat(base_path_image,
+                        base_path_labels + '/DOTA-v1.5_train',
+                        base_path_labels + '/yolo_labels',
                         util.classnames_v1_5)
 
-    drawLongsideFormatimg(imgpath='DOTA_demo/images',
-                          txtpath='DOTA_demo/yolo_labels',
-                          dstpath='DOTA_demo/draw_longside_img',
+    drawLongsideFormatimg(imgpath=base_path_image,
+                          txtpath=base_path_labels + '/yolo_labels',
+                          dstpath=base_path_labels + '/draw_longside_img',
                           extractclassname=util.classnames_v1_5)
