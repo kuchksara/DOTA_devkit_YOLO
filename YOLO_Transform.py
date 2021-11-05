@@ -300,7 +300,7 @@ if __name__ == '__main__':
     ## an example
     base_dota = '/content/drive/My Drive/dota'
     base_path_image = base_dota + '/images'
-    base_path_labels = base_dota + '/train'
+    base_path_labels = base_dota + '/val'
     dota2LongSideFormat(base_path_image,
                         base_path_labels + '/DOTA-v1.5_train',
                         base_path_labels + '/yolo_labels',
